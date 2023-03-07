@@ -1,0 +1,57 @@
+#Filip Pańczak s25056 11c
+#zad 1
+x = input()
+operand = input()
+y = input()
+x = int(x)
+y = int(y)
+def plus(a, b):
+    return a + b
+def minus(a, b):
+    return a - b
+def mult(a, b):
+    return a * b
+def div(a, b):
+    return a / b
+
+if operand == "+":
+    print(plus(x,y))
+elif operand == "-":
+    print(minus(x,y))
+elif operand == "*":
+    print(mult(x,y))
+elif operand == "/":
+    print(div(x,y))
+    
+#zad2
+#Filip Pańczak s25056 11c
+
+class Person:
+    def __init__(self, imie, nazwisko, age, height):
+        self.imie = imie
+        self.age = age
+        self.nazwisko = nazwisko
+        self.height = height
+
+
+people = []
+option = 1
+while option != 0:
+    print("Wybierz opcje:"
+          "1. Dodaj osobe"
+          "0. exit")
+    option2 = input()
+    if option2 == 0:
+        exit()
+    elif option2 == 1:
+        print("podaj imie: ")
+        imie = input()
+        print("podaj nazwisko: ")
+        nazwisko = input()
+        print("podaj wiek: ")
+        wiek = input()
+        print("podaj wzrost: ")
+        wzrost = input()
+        p1 = Person(imie, nazwisko, wiek, wzrost)
+    people.__add__(p1)
+
